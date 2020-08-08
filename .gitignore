@@ -20,6 +20,5 @@
 hs_err_pid*
 
 #test-output folder
-GoogleTest/test-output/
 GoogleTest/target/
 
