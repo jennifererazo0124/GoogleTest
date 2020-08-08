@@ -38,7 +38,7 @@ public class SettingsLinkTest {
 		googleSearchPage = new GoogleSearchPage(driver);
 		googleSearchPage.search("QA");
 		resultsPage = new ResultsPage(driver);
-		assertTrue(resultsPage.searchSettingsLink());
+		assertFalse(resultsPage.searchSettingsLink());
 	}
 	
 	@AfterTest
