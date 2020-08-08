@@ -9,7 +9,7 @@ jobs:
       - image: circleci/openjdk:8-jdk-stretch-browsers
          
     
-    working_directory : ~/selenium-java
+    working_directory : ~/GoogleTest
 
     steps:
       - checkout
@@ -27,21 +27,21 @@ jobs:
             java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
           background: true
 
-      - run: cd GoogleSearch && mvn dependency:go-offline
+      - run: cd GoogleTest && mvn dependency:go-offline
 
       - save_cache:
           paths:
             - ~/.m2
-          key: v1-dependencies-{{ checksum "GoogleSearch/pom.xml" }}
+          key: v1-dependencies-{{ checksum "GoogleTest/pom.xml" }}
 
       # run tests!
-      - run: cd GoogleSearch && mvn clean integration-test
+      - run: cd GoogleTest && mvn clean integration-test
       
       - run:
           name: Save test results
           command: |
             mkdir -p ~/testng/results/
-            find . -type f -regex "./GoogleSearch/test-output/emailable-report.html" -exec cp {} ~/testng/results/ \;
+            find . -type f -regex "./GoogleTest/test-output/emailable-report.html" -exec cp {} ~/testng/results/ \;
           when: always
       - store_test_results:
           path: ~/testng/results/
