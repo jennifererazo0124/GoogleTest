@@ -1,7 +1,6 @@
 package test;
 
 
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
@@ -38,7 +37,7 @@ public class SettingsLinkTest {
 		googleSearchPage = new GoogleSearchPage(driver);
 		googleSearchPage.search("QA");
 		resultsPage = new ResultsPage(driver);
-		assertFalse(resultsPage.searchSettingsLink());
+		assertTrue(resultsPage.searchSettingsLink());
 	}
 	
 	@AfterTest
