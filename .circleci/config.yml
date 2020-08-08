@@ -19,14 +19,12 @@ jobs:
       - run:
           name: Download Selenium
           command: |
-            curl -O 
-http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+            curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
       
       - run:
           name: Start Selenium
           command: |
-            java -jar selenium-server-standalone-3.5.3.jar -log 
-test-reports/selenium.log
+            java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
           background: true
 
       - run: cd GoogleSearch && mvn dependency:go-offline
@@ -43,9 +41,7 @@ test-reports/selenium.log
           name: Save test results
           command: |
             mkdir -p ~/testng/results/
-            find . -type f -regex 
-"./GoogleSearch/test-output/emailable-report.html" -exec cp {} 
-~/testng/results/ \;
+            find . -type f -regex "./GoogleSearch/test-output/emailable-report.html" -exec cp {} ~/testng/results/ \;
           when: always
       - store_test_results:
           path: ~/testng/results/
