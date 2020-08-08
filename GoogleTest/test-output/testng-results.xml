@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-08T09:59:49 COT" name="Default suite" finished-at="2020-08-08T10:00:03 COT" duration-ms="14410">
+  <suite started-at="2020-08-08T15:18:50 COT" name="Default suite" finished-at="2020-08-08T15:19:04 COT" duration-ms="14588">
     <groups>
     </groups>
-    <test started-at="2020-08-08T09:59:49 COT" name="Default test" finished-at="2020-08-08T10:00:03 COT" duration-ms="14410">
+    <test started-at="2020-08-08T15:18:50 COT" name="Default test" finished-at="2020-08-08T15:19:04 COT" duration-ms="14588">
       <class name="test.SettingsLinkTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T09:59:49 COT" name="setUp" finished-at="2020-08-08T09:59:57 COT" duration-ms="7618" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T15:18:50 COT" name="setUp" finished-at="2020-08-08T15:18:58 COT" duration-ms="7876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="settingsLinkTest()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T09:59:57 COT" name="settingsLinkTest" finished-at="2020-08-08T09:59:59 COT" duration-ms="1878" status="PASS">
+        <test-method signature="settingsLinkTest()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T15:18:58 COT" name="settingsLinkTest" finished-at="2020-08-08T15:18:59 COT" duration-ms="1791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingsLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T09:59:59 COT" name="tearDown" finished-at="2020-08-08T10:00:03 COT" duration-ms="4880" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.SettingsLinkTest@124c278f]" started-at="2020-08-08T15:18:59 COT" name="tearDown" finished-at="2020-08-08T15:19:04 COT" duration-ms="4887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

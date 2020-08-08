@@ -35,8 +35,10 @@ jobs:
           key: v1-dependencies-{{ checksum "GoogleTest/pom.xml" }}
 
       # run tests!
-      - run: cd GoogleTest && mvn clean integration-test
-      
+      - run: 
+          name: Run test
+            command: |
+              cd GoogleTest && mvn clean test
       - run:
           name: Save test results
           command: |
