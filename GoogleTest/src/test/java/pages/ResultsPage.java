@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class ResultsPage {
 	
 	WebDriver driver = null;
-	By settingsLinkLocator = By.linkText("Settings");
+	By settingsLinkLocator = By.linkText("Settings2");
 	
 	public ResultsPage (WebDriver driver) {
 		this.driver = driver;
